@@ -115,7 +115,7 @@ label day_06_scene_1_1:
     j "I found two lovely sets."
     l "Me too."
     j "Let's go to the dressing room."
-
+    label galleryScene1:
     scene expression "day_06_scene_01_jennifer_22[hair]" with dissolve
     "{color=#D2691E}*Jennifer enters the dressing room first.*{/color}"
 
@@ -165,7 +165,7 @@ label day_06_scene_1_1:
     l "Which set are you going to buy?"
     j "I'll buy both."
     l "Hehe, me too."
-
+    $ renpy.end_replay()
     scene expression "day_06_scene_01_jennifer_32[hair]" with dissolve
     "{color=#D2691E}*The girls go to the cashier, pay for their shopping and leave the store.*{/color}"
     l "So where are we going now?"
@@ -2197,7 +2197,7 @@ label day_06_scene_13:
         l "Good night, dear."
         j "Good night, Lisa."
         $ FileSave(6, confirm=False)()
-
+        $ renpy.end_replay()
         jump end_of_day_6
 
     else:

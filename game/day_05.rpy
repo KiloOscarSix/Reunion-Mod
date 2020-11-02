@@ -872,7 +872,7 @@ label day_05_scene_4a:
                                         #############SCENE 04b - Isabella and Sandra#############
 #####################################################################################################################################################
 label day_05_scene_4b:
-
+    $ renpy.end_replay()
     scene day_05_scene_04b_isabella_sandra_scene_1 with dissolve
     i "Hey, Sandra."
     s "Isabella, good to see you again."
@@ -1590,7 +1590,7 @@ label day_05_scene_6:
     mary "I know."
     mc "I love you."
     mary "I love you, too."
-
+    $ renpy.end_replay()
     jump day_05_scene_7
 
 #####################################################################################################################################################

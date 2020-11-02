@@ -1016,7 +1016,7 @@ label shopping_day_4:
         jump office_day_04_scene_2
 
 label office_day_04_scene_2:
-
+    $ renpy.end_replay()
     scene black with dissolve
     show bg some_time_later with dissolve
     $ renpy.pause ()
@@ -1120,7 +1120,7 @@ label office_day_04_scene_2:
         "{color=#D2691E}*Clara is nodding her head.*{/color}"
         mc "Then get the fuck out of here and remember that I'm watching you."
         $ clara_submission += 1
-
+    $ renpy.end_replay()
     scene black with dissolve
     show bg some_time_later with dissolve
     $ renpy.pause ()
