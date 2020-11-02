@@ -44,6 +44,31 @@ screen modOptions():
 
         text "Mod Options" style "modTextHeader"
 
+        frame:
+            padding (20, 20)
+
+            grid 4 4:
+                xcenter 0.5
+                yspacing 20
+                style_prefix "check"
+
+                textbutton "Linda Path" action [ToggleVariable("LindaSubmissionPath", false_value="", true_value="{color=#0f0}[Linda Sub Path]"), ToggleVariable("LindaLovePath", false_value="", true_value="{color=#0f0}[Linda Love Path]")]
+                textbutton "Jennifer Path" action [ToggleVariable("JenniferPath", false_value="", true_value="{color=#0f0}[Jennifer Path]"), ToggleVariable("JenniferLovePath", false_value="", true_value="{color=#0f0}[Jennifer Love Path]")]
+                textbutton "Nicole Path" action [ToggleVariable("NicoleSubmissionPath", false_value="", true_value="{color=#0f0}[Nicole Sub Path]"), ToggleVariable("NicoleLovePath", false_value="", true_value="{color=#0f0}[Nicole Love Path]")]
+                textbutton "Lisa Path" action [ToggleVariable("LisaLovePath", false_value="", true_value="{color=#0f0}[Lisa Love Path]"), ToggleVariable("LisaLesbianPath", false_value="", true_value="{color=#0f0}[Lisa Lesbian Path]"), ToggleVariable("LisaHaremPath", false_value="", true_value="{color=#0f0}[Lisa Harem Path]"), ToggleVariable("_LisaLovePath", false_value="", true_value="{color=#f00}[Lisa Love Path]")]
+                textbutton "Kelly Path" action ToggleVariable("KellyPath", false_value="", true_value="{color=#0f0}[Kelly Path]")
+                textbutton "Sandra Path" action [ToggleVariable("SandraLovePath", false_value="", true_value="{color=#0f0}[Sandra Love Path]")]
+                textbutton "Sandra & Emily Path" action [ToggleVariable("SandraEmilyPath", false_value="", true_value="{color=#0f0}[Sandra+Emily Path]"), ToggleVariable("_SandraEmilyPath", false_value="", true_value="{color=#f00}[Sandra+Emily Path]")]
+                textbutton "Clara Path" action ToggleVariable("ClaraSubmissionPath", false_value="", true_value="{color=#0f0}[Clara Sub Path]")
+                textbutton "Emily Path" action [ToggleVariable("EmilyPath", false_value="", true_value="{color=#0f0}[Emily Path]"), ToggleVariable("EmilyLovePath", false_value="", true_value="{color=#0f0}[Emily Love Path]")]
+                textbutton "Khloe Path" action ToggleVariable("KhloePath", false_value="", true_value="{color=#0f0}[Khloe Path]")
+                textbutton "Holy Path" action ToggleVariable("HolyLovePath", false_value="", true_value="{color=#0f0}[Holy Path]")
+                textbutton "Keira Path" action ToggleVariable("KeiraSubmissionPath", false_value="", true_value="{color=#0f0}[Keira Sub Path]")
+                textbutton "Isabella Path" action ToggleVariable("IsabellaLovePath", false_value="", true_value="{color=#0f0}[Isabella Path]")
+                textbutton "Becky Path" action ToggleVariable("BeckyPath", false_value="", true_value="{color=#0f0}[Becky Path]")
+                textbutton "Rachel Path" action ToggleVariable("RachelLovePath", false_value="", true_value="{color=#0f0}[Rachel Path]")
+                textbutton "Amy Path" action ToggleVariable("AmyLovePath", false_value="", true_value="{color=#0f0}[Amy Path]")
+
         textbutton "Change In-Game Names" action ui.callsinnewcontext("changeIngameNames") text_style "modTextButtonHeader"
 
         textbutton "Change Gallery Names" action ui.callsinnewcontext("changeGalleryNames") text_style "modTextButtonHeader"
